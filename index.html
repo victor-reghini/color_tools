@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planilha para JSON</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Converter XLSX/CSV para JSON</h1>
+    <input type="file" id="fileInput" accept=".xlsx, .csv" />
+
+    <label for="columnAdd"><strong>Adicionar coluna:</strong></label><br>
+    <select id="columnAdd"></select>
+
+    <ul id="columnList"></ul>
+
+    <button id="exportBtn">📥 Exportar visualização para XLSX</button>
+
+    <div class="table-wrapper">
+      <table id="previewTable"></table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
