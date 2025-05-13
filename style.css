@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 2em;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input[type="file"], select, button {
+    margin: 1em 0;
+    font-size: 1em;
+  }
+  
+  #columnAdd {
+    width: 100%;
+    padding: 0.5em;
+  }
+  
+  #columnList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    min-height: 40px;
+  }
+  
+  #columnList li {
+    background: #eef;
+    padding: 0.5em;
+    margin: 0.25em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  #columnList button {
+    background: #e44;
+    color: white;
+    border: none;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2em;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 1em;
+    overflow-x: auto;
+    border-radius: 5px;
+    max-height: 400px;
+  }
+  
